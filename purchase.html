@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripginie - Purchase Your Group Trip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #e0f7fa, #e1bee7); color: #333; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: #4c6ef5; color: #fff; padding: 30px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        header h1 { font-size: 2rem; }
+        .offer-banner { background: #fff3e0; color: #333; margin-top: 15px; padding: 10px; border-radius: 8px; font-size: 1rem; display: inline-block; }
+        .container { max-width: 600px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+        h2 { color: #4c6ef5; margin-bottom: 20px; text-align: center; }
+        form { display: flex; flex-direction: column; }
+        label { margin: 10px 0 5px; font-weight: 600; }
+        input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 20px; font-size: 1rem; }
+        .button { background: linear-gradient(90deg, #4c6ef5, #7c4dff); color: #fff; padding: 15px; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; }
+        .button:hover { background: linear-gradient(90deg, #7c4dff, #4c6ef5); }
+        .terms { font-size: 0.85rem; color: #555; margin-top: 15px; text-align: center; }
+        footer { text-align: center; font-size: 0.8rem; color: #777; padding: 20px; margin-top: auto; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Purchase Your Group Trip</h1>
+    <div class="offer-banner">
+        <del style="color: #d32f2f; font-weight: bold;">$4.99</del> <strong>Early Bird Offer: Free for a Limited Time!</strong> - No credit card required.
+    </div>
+</header>
+<div class="container">
+    <h2>Trip Organizer Details</h2>
+    <form action="#" method="POST">
+        <label for="hostName">Your Name</label>
+        <input type="text" id="hostName" name="hostName" required>
+        <label for="hostPhone">Mobile Number</label>
+        <input type="tel" id="hostPhone" name="hostPhone" required placeholder="+1 555-555-5555">
+        <label for="tripName">Trip Name or Destination</label>
+        <input type="text" id="tripName" name="tripName" required>
+        <label for="tripNotes">Optional Notes</label>
+        <textarea id="tripNotes" name="tripNotes" rows="4" placeholder="Add any trip details..."></textarea>
+        <button type="submit" class="button">Confirm & Get Group Code</button>
+    </form>
+    <div class="terms">
+        By submitting, you agree to receive SMS/MMS messages for trip setup, expense tracking, and notifications. Msg & Data rates may apply. Reply STOP to unsubscribe at any time.
+    </div>
+</div>
+<footer>
+    &copy; 2025 Tripginie. All rights reserved.
+</footer>
+</body>
+</html>
